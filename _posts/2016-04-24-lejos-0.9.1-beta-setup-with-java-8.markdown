@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "leJOS 0.9.1-beta setup with Java 8"
+date:   2016-04-24 14:16:18 +0200
+categories: lejos
+---
+After a while of not playing with my EV3 I wanted to play around with Java 8 a little bit I started to setup my EV3 with leJOS 0.9.1-beta setup.
+
+The first mistake (which I did with older leJOS-releases too) was that I unzipped the lejosimage.zip with a double click from Finder which created a lejosimage-folder with the contents. This will cause the sd to not boot.
+
+To create a Java 8 JRE for the SD card I followed the awesome instructions on [this][lejos-blog] blog.
+
+Short command summary:
+{% highlight bash %}
+gunzip ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.gz
+tar xvf ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014
+cd ejdk1.8.0/bin
+export JAVA_HOME=/usr
+./jrecreate.sh --dest ../../ejre-8u1-linux-arm-15_may_2015 --profile compact2 --vm client
+cd ../..
+tar cvf ejre-8u1-linux-arm-15_may_2015.tar ejre-8u1-linux-arm-15_may_2015
+gzip ejre-8u1-linux-arm-15_may_2015.tar
+{% endhighlight %}
+
+The created tar needs to be copied to the sd card before booting the first time.
+
+To connect to my EV3 I realized that because of a bug on OSX El Capitan [HoRNDIS][HoRNDIS] will not work so I switch to bluetooth which works like a charm (paired devices, connected from Mac to EV3) with ssh:
+
+{% highlight bash %}
+ssh root@10.0.1.1
+{% endhighlight %}
+
+To avoid remembering the IP I added the following snippet to my .ssh/config:
+
+{% highlight bash %}
+Host ev3
+  Hostname 10.0.1.1
+  User root
+{% endhighlight %}  
+
+[HoRNDIS]: http://joshuawise.com/horndis
+[lejos-blog]: http://gjf2a.blogspot.de/2015/05/setting-up-lejos-09-with-java-8.html
