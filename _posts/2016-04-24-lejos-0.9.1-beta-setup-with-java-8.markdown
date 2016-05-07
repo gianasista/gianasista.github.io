@@ -2,7 +2,9 @@
 layout: post
 title:  "leJOS 0.9.1-beta setup with Java 8"
 date:   2016-04-24 14:16:18 +0200
-categories: lejos
+tags:
+- lejos
+- lego
 ---
 After a while of not playing with my EV3 I wanted to play around with Java 8 a little bit I started to setup my EV3 with leJOS 0.9.1-beta setup.
 
