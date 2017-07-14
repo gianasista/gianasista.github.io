@@ -2,6 +2,7 @@
 layout: post
 title:  "Integrating iTerm2 into Alfred"
 date:   2016-05-20 19:19:18 +0200
+subtype: blog
 tags:
 - iterm
 - alfred

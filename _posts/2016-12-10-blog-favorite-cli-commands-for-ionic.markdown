@@ -2,6 +2,7 @@
 layout: post
 title:  "Favorite cli commands for Ionic"
 date:   2016-12-10 21:10:00 +0200
+subtype: blog
 tags:
 - android
 - ionic2

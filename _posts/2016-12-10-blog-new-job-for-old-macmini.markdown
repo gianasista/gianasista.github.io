@@ -2,6 +2,7 @@
 layout: post
 title:  "New job for old MacMini"
 date:   2016-12-10 20:38:00 +0200
+subtype: blog
 tags:
 - admin
 ---

@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Giving Atom a try"
+date:   2017-07-07 21:44:00 +0200
+subtype: news
+tags:
+- news
+- atom
+---
+I have decided to test [Atom](https://atom.io) for my JavaScript/TypeScript coding.
+Let's see how much fun it is to work with it.

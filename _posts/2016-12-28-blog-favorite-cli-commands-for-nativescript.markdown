@@ -2,6 +2,7 @@
 layout: post
 title:  "Favorite cli commands for NativeScript"
 date:   2016-12-28 20:32:00 +0200
+subtype: blog
 tags:
 - mobile
 - nativescript

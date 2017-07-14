@@ -2,6 +2,7 @@
 layout: post
 title:  "Accessing /data/data - directory on android phone"
 date:   2017-01-30 20:38:00 +0200
+subtype: blog
 tags:
 - mobile
 - android

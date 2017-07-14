@@ -2,6 +2,7 @@
 layout: post
 title:  "leJOS 0.9.1-beta setup with Java 8"
 date:   2016-04-24 14:16:18 +0200
+subtype: blog
 tags:
 - lejos
 - lego
