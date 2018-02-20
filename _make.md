@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Robots
-permalink: /robots/
+title: Make
+permalink: /make/
 ---
 
 <ul class="post-list">
   {% for post in site.posts %}
-    {% if post.subtype == 'robot' %}
+    {% if post.subtype == 'make' %}
     <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
